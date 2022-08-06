@@ -6,9 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<<<<<<< HEAD
 
     <TextView
         android:id="@+id/textView"
+=======
+    <TextView
+>>>>>>> 1be40c31d8f1eaf5bee5dd870a22d5e511557909
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -17,6 +21,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/button"
         android:layout_width="110dp"
@@ -25,5 +30,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+=======
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="275dp"
+        android:layout_height="216dp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="370dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+>>>>>>> 1be40c31d8f1eaf5bee5dd870a22d5e511557909
 
 </androidx.constraintlayout.widget.ConstraintLayout>
