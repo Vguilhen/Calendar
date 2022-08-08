@@ -8,12 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 class CalendarAdapter(private val dataSet: Array<String>) :
     RecyclerView.Adapter<CalendarAdapter.ViewHolder>() {
 
-
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView
 
         init {
-            textView = view.findViewById(R.id.textView)
+            textView = view.findViewById(com.google.android.material.R.id.layout)
         }
 
     }
@@ -34,4 +33,3 @@ class CalendarAdapter(private val dataSet: Array<String>) :
 
 //class CalendarAdapter(view:View) : RecyclerView.ViewHolder(view) {
 //    val textView:
-}
