@@ -1,7 +1,10 @@
 package com.example.calendar
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -18,7 +21,12 @@ class CalendarAdapter(private val dataSet: Array<String>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        TODO("Not yet implemented")
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.calendar_cell, parent, false)
+        val layoutParams = LinearLayout.LayoutParams()
+            layoutParams.LayoutParams = RelativeLayout.LayoutParams()
+        layoutParams.height = (0.16666666)
+        return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
